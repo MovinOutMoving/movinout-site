@@ -126,6 +126,12 @@ section#about .about__image img {
 section#services h2 {
   margin: 100px 0 50px;
 }
+section#services .btn {
+  display: block;
+  width: 100%;
+  max-width: 150px;
+  margin: 0 auto 50px;
+}
 section#services .services__options .row {
   border: 2px solid white;
   border-radius: 5px;
@@ -141,6 +147,12 @@ section#services .services__options .row {
     border: none;
     border-radius: 0;
     margin-bottom: 5px;
+    display: flex;
+  }
+}
+@media (max-width: 766px) {
+  section#services .services__options .row:nth-of-type(even) {
+    flex-direction: column-reverse;
   }
 }
 section#services .services__options-text {
@@ -157,11 +169,6 @@ section#services .services__options-image {
   height: 400px;
   overflow: hidden;
   max-width: 100%;
-}
-@media (max-width: 766px) {
-  section#services .services__options-image {
-    display: none;
-  }
 }
 section#services .services__options-image img {
   position: absolute;
